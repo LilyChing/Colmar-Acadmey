@@ -40,12 +40,17 @@
 		}
 		.px-a-24px{
 			padding-left: 24px;
+			padding-right:24px;
+		}
+		.px-a-24px0{
+			padding-left: 24px;
 			padding-right:0;
 		}
 		.px-a-72px{
 			padding-left: 72px;
 			padding-right:72px;
 		}
+		
 		.banner-pt{
 			padding-top: 32px;
 		}
@@ -55,11 +60,14 @@
 		.pb-undertitle{
 			padding-bottom: 32px;
 		}
+		.mt-uptitle{
+			margin-top: 0;
+		}
 		@media only screen and (max-width: 768px){
 			.container {
 				max-width: 100%;
 			}
-			.px-a-24px, .px-a-72px{
+			.px-a-24px, .px-a-24px0, .px-a-72px{
 				padding-left: 16px;
 				padding-right: 16px;
 			}
@@ -78,6 +86,9 @@
 			}
 			.pb-undertitle{
 			padding-bottom: 16px;
+			}
+			.mt-uptitle{
+			margin-top: 32px;
 			}
 			.bg-change{
 				background-color: white;
@@ -123,11 +134,17 @@
 		.mt-24px{
 			margin-top: 24px;
 		}
+		.mt-16px{
+			margin-top: 16px;
+		}
 		.mb-32px{
 			margin-bottom: 32px;
 		}
 		.mb-24px{
 			margin-bottom: 24px;
+		}
+		.mb-16px{
+			margin-bottom: 16px;
 		}
 		.mb-8px{
 			margin-bottom: 8px;
@@ -181,8 +198,8 @@
 			<div class="col-12 col-md-7 pl-0 pr-0 align-self-center ">
 				<img src="source/images/banner.jpg" class="w-100">
 			</div>
-			<div class="col-12 col-md-4 align-self-center px-a-24px">
-				<h2 class="font-weight-bold mb-32px">Learn something new everyday</h2>
+			<div class="col-12 col-md-4 align-self-center px-a-24px0">
+				<h2 class="font-weight-bold mb-32px mt-uptitle">Learn something new everyday</h2>
 				<h4 class="display-5 mb-24px">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
 				<button type="button" class="btn btn-dark btn-lg btn-block rounded-0 py-8px">Start here</button>
 			</div>
@@ -354,64 +371,66 @@
 		</div>
 	</div>
 	<!-- Thesis exhibit -->
-	<div class="container pl-0 pr-0">
+	<div class="container pr-0 pt-32px img-pl-a-24px">
 		<div class="row text-center">
 			<div class="col-12 pb-undertitle">
 				<h2 class="font-weight-bold">Thesis exhibit</h2>
 			</div>
 		</div>
-		<div class="row"> 
-			<div class="col-12 col-md-7 img-pl-a-24px img-pr-a-24px"> <!-- left col -->
-				<video class="h100 w-100" controls>
+		<div class="row">
+			<!-- left col -->
+			<div class="col-12 col-md-7 "> 
+				<video class="h100 w-100 mb-24px" controls>
 					<source src="source/videos/thesis.mp4" type="video/mp4">
 				</video>
 					<div class="d-none d-md-block">
-					<h4 class=" font-weight-bold">Reimagine urban</h4>
-					<p>Morbi quis nulla ut risus fringilla interdum. Aliquam pharetra libero magna, eget vestibulum metus facilisis vitae. Sed quis nulla sodales, sagittis est id, pharetra dolor. Nunc a lorem porttitor, mollis lorem ut, feugiat nulla.</p>
+					<h2 class=" font-weight-bold mb-8px">Reimagine urban</h2>
+					<p class="mb-32px">Morbi quis nulla ut risus fringilla interdum. Aliquam pharetra libero magna, eget vestibulum metus facilisis vitae. Sed quis nulla sodales, sagittis est id, pharetra dolor. Nunc a lorem porttitor, mollis lorem ut, feugiat nulla.</p>
 				</div>
 			</div>
-			<div class="col-5"> <!-- right col -->
+			<!-- right col -->
+			<div class="col-5 d-none d-md-block img-pl-a-24px pr-0"> 
 				<!-- First card -->
-				<div class="card rounded-0 bg-secondary d-none d-md-block"> 
+				<div class="card rounded-0 bg-change pl-16px pr-16px pt-16px pb-16px"> 
 					<div class="row align-items-center">
-						<div class="col-4">
-							<img src="source/images/thesis-fisma.jpg" class="w-100 h-auto">
+						<div class="col-4 pl-0 pr-0">
+							<img src="source/images/thesis-fisma.jpg" class="w-100 h-auto ">
 						</div>
-						<div class="col-8">
-							<h4>Fisma: Design and Prototype</h4>
+						<div class="col-8 pl-16px">
+							<h5 class="mb-8px">Fisma: Design and Prototype</h5>
 							<p>Designer showcase of new prototype product</p>
 						</div>
 					</div>
 				</div>
-				<!-- Second card -->
-				<div class="card rounded-0 border-0 d-none d-md-block"> 
+				<!-- 2nd card -->
+				<div class="card rounded-0 pl-16px pr-16px pt-16px pb-16px"> 
 					<div class="row align-items-center">
-						<div class="col-4 ">
+						<div class="col-4 pl-0 pr-0">
 							<img src="source/images/thesis-now-and-then.jpg" class="w-100 h-auto">
 						</div>
-						<div class="col-8">
-							<h4>Now and then</h4>
+						<div class="col-8 pl-16px">
+							<h5 class="mb-8px">Now and then</h5>
 							<p>Research study about New York</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	<!-- End of container -->
+	</div>
 	<!-- footer -->
-	<footer>
-		<hr>
+	<footer class="container px-a-24px pb-undertitle">
+		<hr class="mt-0 mb-16px">
 		<div class="row">
-			<div class="col">
+			<div class="col pl-0 pr-0">
 				<p>@2016 Colmar Acadmey. All rights reserved</p>
 			</div>
-			<div class="col-auto d-none d-md-block">
-				<a href="#" class="text-dark">Terms</a>
-				<a href="#" class="text-dark">Privacy</a>
+			<div class="col-auto col pl-0 pr-0 d-none d-md-block ">
+				<a href="#" class="text-dark nav-item-left16">Terms</a>
+				<a href="#" class="text-dark nav-item-left16">Privacy</a>
 			</div>
 		</div>
 	</footer>
-	<!-- End of container -->
-	</div>
 	<!-- Bootstrap script -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
