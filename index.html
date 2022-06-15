@@ -6,14 +6,17 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<title>Colmar Academy</title>
 	<style type="text/css">
-		.container-fluid, .navbar, .navbar-brand, .nav-item, .navbar-text, .btn, .display-4, .display-5{
+		.container-fluid, .navbar, .navbar-brand, .nav-item, .navbar-text, .btn, .display-4, .display-5, .navbar-expand-lg .navbar-nav .nav-link, .row, .col-12,p,h2,h5{
 			margin: 0 ;
 			padding: 0 ;
+		}
+		.bg-change{
+			background-color: #6c757d;
 		}
 		.navbar-brand{
 			height: 32px;
 		}
-		.navbar-expand-lg .navbar-nav .nav-link{
+		.nav-item-left16{
 			margin-left: 16px;
 			padding: 0;
 		}
@@ -23,28 +26,112 @@
 		.height-64{
 			height: 64px;
 		}
+		.img-pl-a-24px{
+			padding-left: 24px;	
+		}
+		.img-pr-a-24px{
+			padding-right: 24px;
+		}
+		.px-a-24px{
+			padding-left: 24px;
+			padding-right:0;
+		}
+		.banner-pt{
+			padding-top: 32px;
+		}
+		.pb-a-32px{
+			padding-bottom: 32px;
+		}
+		@media only screen and (max-width: 768px){
+			.container {
+				max-width: 100%;
+			}
+			.px-a-24px{
+				padding-left: 16px;
+				padding-right: 16px;
+			}
+			.img-pl-a-24px {
+				padding-left: 0px;
+			}
+			.img-pr-a-24px{
+				padding-right: 0px;
+			}
+			.banner-pt{
+				padding-top: 0;
+			}
+
+			.pb-a-32px{
+				padding-bottom: 0;
+			}
+			.bg-change{
+				background-color: white;
+			}
+		}
+		.pl-24px{
+			padding-left: 24px;
+		}
+		.pl-16px{
+			padding-left: 16px;
+		}
+		.pr-24px{
+			padding-right: 24px;
+		}
+		.pr-16px{
+			padding-right: 16px;
+		}
+		.pt-32px{
+			padding-top: 32px;
+		}
+		.pt-16px{
+				padding-top: 16px;
+		}
+		.pb-32px{
+			padding-bottom: 32px;
+		}
+		.pb-16px{
+				padding-bottom: 16px;
+		}
+		.py-8px{
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+		.mt-32px{
+			margin-top: 32px;
+		}
+		.mt-24px{
+			margin-top: 24px;
+		}
+		.mb-32px{
+			margin-bottom: 32px;
+		}
+		.mb-24px{
+			margin-bottom: 24px;
+		}
+		.mb-8px{
+			margin-bottom: 8px;
+		}
 	</style>
 </head>
 <body>
 	<!-- Nav bar -->
-	<div class="container-fluid d-none d-md-block">
+	<div class="container d-none d-md-block img-pr-a-24px img-pl-a-24px">
 		<nav class="navbar navbar-expand-lg navbar-light justify-content-between height-64">
 			<a class="navbar-brand d-flex align-items-center" href="#">
-			<img src="source/images/ic-logo.svg">
-			<span class="navbar-text align-items-center" style="font-size: 16px;"><span class="font-weight-bold text-dark">COLMAR</span>ACADEMY
-			</span>
+				<img src="source/images/ic-logo.svg">
+				<span class="navbar-text align-items-center" style="font-size: 16px;"><span class="font-weight-bold text-dark">COLMAR</span>ACADEMY
+				</span>
 			</a>
-			<ul class="navbar-nav">
-				<li class="nav-item active">
+			<ul class="navbar-nav ">
+				<li class="nav-item active nav-item-left16">
 					<a class="nav-link " href="#">On campus<span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item nav-item-left16">
 					<a class="nav-link" href="#">Online</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item nav-item-left16">
 					<a class="nav-link " href="#">Companies</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item nav-item-left16">
 					<a class="nav-link " href="#">Sign in</a>
 				</li>
 			</ul>
@@ -67,73 +154,74 @@
 		</nav>
 	</div>
 	<!-- banner -->
-	<div class="container-fluid bg-secondary align-items-center">
+	<div class="container bg-secondary banner-pt pb-32px img-pl-a-24px pr-0">
 		<div class="row">
-			<div class="col-12 col-md-7">
+			<div class="col-12 col-md-7 pl-0 pr-0 align-self-center ">
 				<img src="source/images/banner.jpg" class="w-100">
 			</div>
-			<div class="col-12 col-md-4 align-self-center">
-				<h2 class="display-4 font-weight-bold">Learn something new everyday</h2>
-				<h4 class="display-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-				<button type="button" class="btn btn-dark btn-lg btn-block rounded-0">Start here</button>
+			<div class="col-12 col-md-4 align-self-center px-a-24px">
+				<h2 class="font-weight-bold mb-32px">Learn something new everyday</h2>
+				<h4 class="display-5 mb-24px">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+				<button type="button" class="btn btn-dark btn-lg btn-block rounded-0 py-8px">Start here</button>
 			</div>
 		</div>
 	</div>
 	<!-- information -->
-	<div class="container-fluid align-items-center">
-		<div class="row"> 
-			<div class="col-7 d-none d-md-block"> <!-- left col -->
+	<div class="container align-items-center pb-a-32px img-pl-a-24px banner-pt pr-0">
+		<div class="row">
+			<!-- left col -->
+			<div class="col-7 d-none d-md-block pl-0 pr-0"> 
 				<img src="source/images/information-main.jpg" class="w-100">
-				<h2 class=" font-weight-bold">It's doesn't hurt to keep practicing</h2>
-				<p>"Morbi quis nulla ut risus fringilla interdum. Aliquam pharetra libero magna, eget vestibulum metus facilisis vitae. Sed quis nulla sodales, sagittis est id, pharetra dolor. Nunc a lorem porttitor, mollis lorem ut, feugiat nulla."</p>
-				<p>Enanuel, Sr Strategist at Hiiring.com</p>
+				<h2 class=" font-weight-bold mt-32px">It's doesn't hurt to keep practicing</h2>
+				<p class="mt-24px">"Morbi quis nulla ut risus fringilla interdum. Aliquam pharetra libero magna, eget vestibulum metus facilisis vitae. Sed quis nulla sodales, sagittis est id, pharetra dolor. Nunc a lorem porttitor, mollis lorem ut, feugiat nulla."</p>
+				<p class="mt-24px font-italic">Enanuel, Sr Strategist at Hiiring.com</p>
 			</div>
-
-			<div class="col-12 col-md-5"> <!-- right col -->
+			<!-- right col -->
+			<div class="col-12 col-md-5 img-pl-a-24px"> 
 				<!-- First card -->
-				<div class="card rounded-0"> 
+				<div class="card rounded-0 pl-16px pr-16px pt-16px pb-16px"> 
 					<div class="row align-items-center">
-						<div class="col-12 d-block d-md-none">
+						<div class="col-12 d-block d-md-none pl-0 pr-0">
 							<img src="source/images/information-orientation-mobile.jpg" class="w-100 h-auto ">
 						</div>
-						<div class="col-4 d-none d-md-block">
+						<div class="col-4 d-none d-md-block pl-0 pr-0">
 							<img src="source/images/information-orientation.jpg" class="w-100 h-auto">
 						</div>
-						<div class="col-12 col-md-8">
-							<h4>Orientation date</h4>
-							<p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+						<div class="col-12 col-md-8 pl-16px">
+							<h5 class="mb-8px">Orientation date</h5>
+							<p class="mb-8px">Tue 10/11 & Wed 10/12: 8am-3pm</p>
 							<a href="#" class="card-link">Read more</a>
 						</div>
 					</div>
 				</div>
 				<!-- 2nd card -->
-				<div class="card rounded-0"> 
+				<div class="card rounded-0 pl-16px pr-16px pt-16px pb-16px"> 
 					<div class="row align-items-center">
-						<div class="col-12 d-block d-md-none">
+						<div class="col-12 d-block d-md-none pl-0 pr-0">
 							<img src="source/images/information-campus-mobile.jpg" class="w-100 h-auto ">
 						</div>
-						<div class="col-4 d-none d-md-block">
+						<div class="col-4 d-none d-md-block pl-0 pr-0">
 							<img src="source/images/information-campus.jpg" class="w-100 h-auto">
 						</div>
-						<div class="col-12 col-md-8">
-							<h4>Our campus</h4>
-							<p>Find which campus is close by you</p>
+						<div class="col-12 col-md-8 pl-16px">
+							<h5 class="mb-8px">Our campus</h5>
+							<p class="mb-8px">Find which campus is close by you</p>
 							<a href="#" class="card-link">Read more</a>
 						</div>
 					</div>
 				</div>
 				<!-- 3rd card -->
-				<div class="card bg-secondary rounded-0"> 
+				<div class="card bg-change rounded-0 pl-16px pr-16px pt-16px pb-16px"> 
 					<div class="row align-items-center">
-						<div class="col-12 d-block d-md-none">
+						<div class="col-12 d-block d-md-none pl-0 pr-0">
 							<img src="source/images/information-guest-lecture-mobile.jpg" class="w-100 h-auto ">
 						</div>
-						<div class="col-4 d-none d-md-block">
+						<div class="col-4 d-none d-md-block pl-0 pr-0">
 							<img src="source/images/information-guest-lecture.jpg" class="w-100 h-auto">
 						</div>
-						<div class="col-12 col-md-8">
-							<h4>Our guest lecture</h4>
-							<p>Join a keynote with Oliver Sack about music in medical treatment</p>
+						<div class="col-12 col-md-8 pl-16px">
+							<h5 class="mb-8px">Our guest lecture</h5>
+							<p class="mb-8px">Join a keynote with Oliver Sack about music in medical treatment</p>
 							<a href="#" class="card-link">Read more</a>
 						</div>
 					</div>
@@ -251,7 +339,7 @@
 			</div>
 		</div>
 		<div class="row"> 
-			<div class="col-12 col-md-7"> <!-- left col -->
+			<div class="col-12 col-md-7 img-pl-a-24px img-pr-a-24px"> <!-- left col -->
 				<video class="h100 w-100" controls>
 					<source src="source/videos/thesis.mp4" type="video/mp4">
 				</video>
