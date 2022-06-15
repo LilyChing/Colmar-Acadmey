@@ -6,9 +6,15 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<title>Colmar Academy</title>
 	<style type="text/css">
-		.container-fluid, .navbar, .navbar-brand, .nav-item, .navbar-text, .btn, .display-4, .display-5, .navbar-expand-lg .navbar-nav .nav-link, .row, .col-12,p,h2,h5{
+		.container-fluid, .navbar, .navbar-brand, .nav-item, .navbar-text, .btn, .display-4, .display-5, .navbar-expand-lg .navbar-nav .nav-link, .row, .col-12,.col-4, p,h2,h5{
 			margin: 0 ;
 			padding: 0 ;
+		}
+		.card-body{
+			padding: 16px 16px 24px 16px;
+		}
+		.card-subtitle, .card-text{
+			margin-top: 8px;
 		}
 		.bg-change{
 			background-color: #6c757d;
@@ -36,17 +42,24 @@
 			padding-left: 24px;
 			padding-right:0;
 		}
+		.px-a-72px{
+			padding-left: 72px;
+			padding-right:72px;
+		}
 		.banner-pt{
 			padding-top: 32px;
 		}
 		.pb-a-32px{
 			padding-bottom: 32px;
 		}
+		.pb-undertitle{
+			padding-bottom: 32px;
+		}
 		@media only screen and (max-width: 768px){
 			.container {
 				max-width: 100%;
 			}
-			.px-a-24px{
+			.px-a-24px, .px-a-72px{
 				padding-left: 16px;
 				padding-right: 16px;
 			}
@@ -62,6 +75,9 @@
 
 			.pb-a-32px{
 				padding-bottom: 0;
+			}
+			.pb-undertitle{
+			padding-bottom: 16px;
 			}
 			.bg-change{
 				background-color: white;
@@ -94,6 +110,12 @@
 		.py-8px{
 			padding-top: 8px;
 			padding-bottom: 8px;
+		}
+		.ml-32px{
+			margin-left: 32px;
+		}
+		.mr-32px{
+			margin-right: 32px;
 		}
 		.mt-32px{
 			margin-top: 32px;
@@ -232,16 +254,16 @@
 		</div>
 	</div>
 	<!-- Start learning -->
-	<div class="container-fluid bg-light">
+	<div class="container bg-light px-a-72px pt-32px pb-32px">
 		<div class="row text-center">
-			<div class="col-12">
-				<h2 class="display-4 font-weight-bold">Start learning</h2>
+			<div class="col-12 pb-undertitle">
+				<h2 class="font-weight-bold">Start learning</h2>
 			</div>
 		</div>
 		<div class="row">
 			<!-- card 1 -->
-			<div class="col-4 d-none d-md-block">
-				<div class="card rounded-0 h-100">
+			<div class="col-4 d-none d-md-block mb-32px">
+				<div class="card rounded-0 h-100 mr-32px">
 					<img src="source/images/course-software.jpg" class="card-img-top" alt="...">
   					<div class="card-body">
   						<h5>Software engineering</h5>
@@ -251,12 +273,12 @@
 				</div>
 			</div>
 			<!-- card 1 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary">
+			<div class="col-12 d-block d-md-none bg-secondary card-body mb-8px">
 				<h5>Software engineering</h5>
 			</div>
 			<!-- card 2 -->
-			<div class="col-4 d-none d-md-block">
-				<div class="card rounded-0 h-100">
+			<div class="col-4 d-none d-md-block mb-32px">
+				<div class="card rounded-0 h-100 mr-32px">
 					<img src="source/images/course-computer-art.jpg" class="card-img-top" alt="...">
   					<div class="card-body">
   						<h5>Computer art</h5>
@@ -266,11 +288,11 @@
 				</div>
 			</div>
 			<!-- card 2 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary">
+			<div class="col-12 d-block d-md-none bg-secondary card-body mb-8px">
 				<h5>Computer art</h5>
 			</div>
 			<!-- card 3 -->
-			<div class="col-4 d-none d-md-block">
+			<div class="col-4 d-none d-md-block mb-32px">
 				<div class="card rounded-0 h-100">
 					<img src="source/images/course-design.jpg" class="card-img-top" alt="...">
   					<div class="card-body">
@@ -281,12 +303,12 @@
 				</div>
 			</div>
 			<!-- card 3 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary">
+			<div class="col-12 d-block d-md-none bg-secondary card-body mb-8px">
 				<h5>Design</h5>
 			</div>
 			<!-- card 4 -->
 			<div class="col-4 d-none d-md-block">
-				<div class="card rounded-0 h-100">
+				<div class="card rounded-0 h-100 mr-32px">
 					<img src="source/images/course-data.jpg" class="card-img-top" alt="...">
   					<div class="card-body">
   						<h5>Data</h5>
@@ -296,12 +318,12 @@
 				</div>
 			</div>
 			<!-- card 4 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary">
+			<div class="col-12 d-block d-md-none bg-secondary card-body mb-8px">
 				<h5>Data</h5>
 			</div>
 			<!-- card 5 -->
 			<div class="col-4 d-none d-md-block">
-				<div class="card rounded-0 h-100">
+				<div class="card rounded-0 h-100 mr-32px">
 					<img src="source/images/course-business.jpg" class="card-img-top" alt="...">
   					<div class="card-body">
   						<h5>Business</h5>
@@ -311,7 +333,7 @@
 				</div>
 			</div>
 			<!-- card 5 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary">
+			<div class="col-12 d-block d-md-none bg-secondary card-body mb-8px">
 				<h5>Business</h5>
 			</div>
 			<!-- card 6 -->
@@ -326,16 +348,16 @@
 				</div>
 			</div>
 			<!-- card 6 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary">
+			<div class="col-12 d-block d-md-none bg-secondary card-body">
 				<h5>Marketing</h5>
 			</div>
 		</div>
 	</div>
 	<!-- Thesis exhibit -->
-	<div class="container-fluid">
+	<div class="container pl-0 pr-0">
 		<div class="row text-center">
-			<div class="col-12">
-				<h2 class="display-4 font-weight-bold">Thesis exhibit</h2>
+			<div class="col-12 pb-undertitle">
+				<h2 class="font-weight-bold">Thesis exhibit</h2>
 			</div>
 		</div>
 		<div class="row"> 
