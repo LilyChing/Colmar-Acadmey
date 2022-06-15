@@ -69,10 +69,10 @@
 	<!-- banner -->
 	<div class="container-fluid bg-secondary align-items-center">
 		<div class="row">
-			<div class="col-7">
+			<div class="col-12 col-md-7">
 				<img src="source/images/banner.jpg" class="w-100">
 			</div>
-			<div class="col-4 align-self-center">
+			<div class="col-12 col-md-4 align-self-center">
 				<h2 class="display-4 font-weight-bold">Learn something new everyday</h2>
 				<h4 class="display-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
 				<button type="button" class="btn btn-dark btn-lg btn-block rounded-0">Start here</button>
@@ -82,14 +82,14 @@
 	<!-- information -->
 	<div class="container-fluid align-items-center">
 		<div class="row"> 
-			<div class="col-7"> <!-- left col -->
+			<div class="col-7 d-none d-md-block"> <!-- left col -->
 				<img src="source/images/information-main.jpg" class="w-100">
 				<h2 class=" font-weight-bold">It's doesn't hurt to keep practicing</h2>
 				<p>"Morbi quis nulla ut risus fringilla interdum. Aliquam pharetra libero magna, eget vestibulum metus facilisis vitae. Sed quis nulla sodales, sagittis est id, pharetra dolor. Nunc a lorem porttitor, mollis lorem ut, feugiat nulla."</p>
 				<p>Enanuel, Sr Strategist at Hiiring.com</p>
 			</div>
 
-			<div class="col-5"> <!-- right col -->
+			<div class="col-12 col-md-5"> <!-- right col -->
 				<!-- First card -->
 				<div class="card rounded-0"> 
 					<div class="row align-items-center">
@@ -255,6 +255,10 @@
 				<video class="h100 w-100" controls>
 					<source src="source/videos/thesis.mp4" type="video/mp4">
 				</video>
+					<div class="d-none d-md-block">
+					<h4 class=" font-weight-bold">Reimagine urban</h4>
+					<p>Morbi quis nulla ut risus fringilla interdum. Aliquam pharetra libero magna, eget vestibulum metus facilisis vitae. Sed quis nulla sodales, sagittis est id, pharetra dolor. Nunc a lorem porttitor, mollis lorem ut, feugiat nulla.</p>
+				</div>
 			</div>
 			<div class="col-5"> <!-- right col -->
 				<!-- First card -->
@@ -283,6 +287,20 @@
 				</div>
 			</div>
 		</div>
+	<!-- footer -->
+	<footer>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<p>@2016 Colmar Acadmey. All rights reserved</p>
+			</div>
+			<div class="col-auto d-none d-md-block">
+				<a href="#" class="text-dark">Terms</a>
+				<a href="#" class="text-dark">Privacy</a>
+			</div>
+		</div>
+	</footer>
+	<!-- End of container -->
 	</div>
 	<!-- Bootstrap script -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
