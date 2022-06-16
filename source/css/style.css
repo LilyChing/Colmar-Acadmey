@@ -4,7 +4,10 @@ body{
 .container-fluid, .navbar, .navbar-brand, .nav-item, .navbar-text, .btn, .display-4, .display-5, .navbar-expand-lg .navbar-nav .nav-link, .row, .col-12,.col-4, p,h2,h5{
 			margin: 0 ;
 			padding: 0 ;
-		}
+}
+.navbar-nav{
+	flex-direction: row; /*fix nav bar item wrap bug*/
+}
 		.card-body{
 			padding: 16px 16px 24px 16px !important;
 		}
