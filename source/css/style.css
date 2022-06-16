@@ -8,6 +8,11 @@ body{
 .navbar-nav{
 	flex-direction: row; /*fix nav bar item wrap bug*/
 }
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 		.card-body{
 			padding: 16px 16px 24px 16px !important;
 		}
@@ -45,8 +50,8 @@ body{
 			padding-right:0 !important;
 		}
 		.px-a-72px{
-			padding-left: 72px !important;
-			padding-right:72px !important;
+			padding-left: 56px !important;
+			padding-right:56px !important;
 		}
 		
 		.banner-pt{
@@ -58,11 +63,19 @@ body{
 		.pb-undertitle{
 			padding-bottom: 32px !important;
 		}
+		.pb-collapse{
+			padding-bottom: 0 !important;
+		}
 		.mt-uptitle{
 			margin-top: 0 !important;
 		}
 		.pb-under-readmore{
 			padding-bottom: 0 !important;
+		}
+		.collapse{
+			padding-left: 16px !important;
+			padding-right: 16px !important;
+			padding-bottom: 32px !important;
 		}
 		@media only screen and (max-width: 768px){
 			.container {
@@ -94,8 +107,21 @@ body{
 			.pb-under-readmore{
 				padding-bottom: 16px !important;
 			}
+			.pb-collapse{
+			padding-bottom: 32px !important;
+			}
 			.bg-change{
 				background-color: white !important;
+			}
+			.collapse{
+				padding-left: 0px !important;
+				padding-right: 0px !important;
+				padding-bottom: 32px !important;
+			}
+		}
+		@media only screen and (min-width: 768px){
+			.collapse:not(.show) {
+				display: block !important;
 			}
 		}
 		.pl-24px{

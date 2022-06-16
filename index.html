@@ -127,16 +127,20 @@
 		</div>
 	</div>
 	<!-- Start learning -->
-	<div class="container bg-light px-a-72px pt-32px pb-32px">
+	<div class="container bg-light px-a-72px pt-32px pb-collapse">
 		<div class="row text-center">
 			<div class="col-12 pb-undertitle">
 				<h2 class="font-weight-bold">Start learning</h2>
 			</div>
 		</div>
 		<div class="row">
+			<!-- card 1 mobile -->
+			<button class="btn btn-secondary col-12 d-block d-md-none card-body text-dark text-left rounded-0 mb-8px" type="button" data-toggle="collapse" data-target="#card1" aria-expanded="false" aria-controls="card1">
+				<h5>Software engineering</h5>
+			</button>
 			<!-- card 1 -->
-			<div class="col-4 d-none d-md-block mb-32px">
-				<div class="card rounded-0 h-100 mr-32px">
+			<div class="col-12 col-md-4 collapse" id="card1">
+				<div class="card rounded-0 h-100">
 					<img src="source/images/course-software.jpg" class="card-img-top" alt="...">
   					<div class="card-body">
   						<h5>Software engineering</h5>
@@ -145,13 +149,13 @@
   					</div>
 				</div>
 			</div>
-			<!-- card 1 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary card-body mb-8px">
-				<h5>Software engineering</h5>
-			</div>
+			<!-- card 2 mobile -->
+			<button class="btn btn-secondary col-12 d-block d-md-none card-body text-dark text-left rounded-0 mb-8px" type="button" data-toggle="collapse" data-target="#card2" aria-expanded="false" aria-controls="card2">
+				<h5>Computer art</h5>
+			</button>
 			<!-- card 2 -->
-			<div class="col-4 d-none d-md-block mb-32px">
-				<div class="card rounded-0 h-100 mr-32px">
+			<div class="col-12 col-md-4 collapse" id="card2">
+				<div class="card rounded-0 h-100">
 					<img src="source/images/course-computer-art.jpg" class="card-img-top" alt="...">
   					<div class="card-body">
   						<h5>Computer art</h5>
@@ -160,12 +164,12 @@
   					</div>
 				</div>
 			</div>
-			<!-- card 2 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary card-body mb-8px">
-				<h5>Computer art</h5>
-			</div>
+			<!-- card 3 mobile -->
+			<button class="btn btn-secondary col-12 d-block d-md-none card-body text-dark text-left rounded-0 mb-8px" type="button" data-toggle="collapse" data-target="#card3" aria-expanded="false" aria-controls="card3">
+				<h5>Design</h5>
+			</button>
 			<!-- card 3 -->
-			<div class="col-4 d-none d-md-block mb-32px">
+			<div class="col-12 col-md-4 collapse" id="card3">
 				<div class="card rounded-0 h-100">
 					<img src="source/images/course-design.jpg" class="card-img-top" alt="...">
   					<div class="card-body">
@@ -175,13 +179,13 @@
   					</div>
 				</div>
 			</div>
-			<!-- card 3 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary card-body mb-8px">
-				<h5>Design</h5>
-			</div>
+			<!-- card 4 mobile -->
+			<button class="btn btn-secondary col-12 d-block d-md-none card-body text-dark text-left rounded-0 mb-8px" type="button" data-toggle="collapse" data-target="#card4" aria-expanded="false" aria-controls="card4">
+				<h5>Data</h5>
+			</button>
 			<!-- card 4 -->
-			<div class="col-4 d-none d-md-block">
-				<div class="card rounded-0 h-100 mr-32px">
+			<div class="col-12 col-md-4 collapse" id="card4">
+				<div class="card rounded-0 h-100 ">
 					<img src="source/images/course-data.jpg" class="card-img-top" alt="...">
   					<div class="card-body">
   						<h5>Data</h5>
@@ -190,13 +194,13 @@
   					</div>
 				</div>
 			</div>
-			<!-- card 4 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary card-body mb-8px">
-				<h5>Data</h5>
-			</div>
+			<!-- card 5 mobile -->
+			<button class="btn btn-secondary col-12 d-block d-md-none card-body text-dark text-left rounded-0 mb-8px" type="button" data-toggle="collapse" data-target="#card5" aria-expanded="false" aria-controls="card5">
+				<h5>Business</h5>
+			</button>
 			<!-- card 5 -->
-			<div class="col-4 d-none d-md-block">
-				<div class="card rounded-0 h-100 mr-32px">
+			<div class="col-12 col-md-4 collapse" id="card5">
+				<div class="card rounded-0 h-100">
 					<img src="source/images/course-business.jpg" class="card-img-top" alt="...">
   					<div class="card-body">
   						<h5>Business</h5>
@@ -205,12 +209,12 @@
   					</div>
 				</div>
 			</div>
-			<!-- card 5 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary card-body mb-8px">
-				<h5>Business</h5>
-			</div>
+			<!-- card 6 mobile -->
+			<button class="btn btn-secondary col-12 d-block d-md-none card-body text-dark text-left rounded-0" type="button" data-toggle="collapse" data-target="#card6" aria-expanded="false" aria-controls="card6">
+				<h5>Marketing</h5>
+			</button>
 			<!-- card 6 -->
-			<div class="col-4 d-none d-md-block">
+			<div class="col-12 col-md-4 collapse" id="card6">
 				<div class="card rounded-0 h-100">
 					<img src="source/images/course-marketing.jpg" class="card-img-top" alt="...">
   					<div class="card-body">
@@ -219,10 +223,6 @@
     					<p class="card-text">Analytics, Content Marketing, Mobile Marketing</p>
   					</div>
 				</div>
-			</div>
-			<!-- card 6 mobile -->
-			<div class="col-12 d-block d-md-none bg-secondary card-body">
-				<h5>Marketing</h5>
 			</div>
 		</div>
 	</div>
